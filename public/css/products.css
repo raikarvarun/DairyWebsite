@@ -39,3 +39,15 @@
     color: #4CAF50;
     margin-top: 0;
 }
+
+@media (max-width: 768px) {
+    .main-content1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        /* Make each product card take up the full width */
+    }
+}

@@ -90,3 +90,17 @@ section h2 {
     /* Lighter background color on hover */
     transition: background-color 0.3s;
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-us{
+        width: 100%;
+    }
+    .about-us{
+        width: 100%;
+    }
+    
+}
