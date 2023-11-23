@@ -1,29 +1,50 @@
-nav {
-    background-color: #4CAF50;
-    /* Background color for the navbar */
+/* navbar.css */
+.navbar  {
+    background-color: #333;
     padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    /* Add space between navbar and content */
 }
 
-ul {
+.navbar-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
-    display: inline-block;
-    margin-right: 20px;
+.navbar-ul li {
+    float: left; /* Display items horizontally */
+    margin: 0 10px;
+    /* Add space on both sides of navbar buttons */
+    transition: transform 0.3s ease-in-out;
 }
 
-a {
+.navbar-ul li:hover {
+    transform: scale(1.1);
+    /* Scale up on hover for a cool effect */
+}
+
+.navbar-item {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    /* Add a smooth color transition effect */
 }
 
-a:hover {
-    border-bottom: 2px solid white;
+.navbar-item:hover {
+    color: #4CAF50;
+    /* Change color on hover */
+    border-bottom: 2px solid #4CAF50;
     /* Add an underline on hover */
+}
+
+/* Clear the float to avoid layout issues */
+.navbar-ul::after {
+    content: "";
+    display: table;
+    clear: both;
 }

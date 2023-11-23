@@ -15,7 +15,14 @@ app.get('/', (req, res) => {
     // Send the HTML content as the response
     res.send(htmlContent);
 });
+app.get('/home', (req, res) => {
+    // Read the contents of index.html
+    const indexPath = path.join(__dirname, 'index.html');
+    const htmlContent = fs.readFileSync(indexPath, 'utf-8');
 
+    // Send the HTML content as the response
+    res.send(htmlContent);
+});
 app.get('/about', (req, res) => {
     // Read the contents of index.html
     const indexPath = path.join(__dirname, '/html/about.html');
