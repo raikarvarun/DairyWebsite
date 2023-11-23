@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahesh Dairy</title>
+  <!-- You can include additional meta tags, stylesheets, or scripts here -->
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+  background: linear-gradient(to right, #4CAF50, #2E7D32);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 1em; /* Increase font size */
+  transition: background 0.3s; /* Add a smooth transition effect */
+}
+
+header:hover {
+  background: linear-gradient(to right, #2E7D32, #4CAF50); /* Change gradient on hover */
+}
+
+    section {
+      padding: 2em;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      margin-bottom: 50px;
+    }
+    section h2 {
+  color: #4CAF50;
+  font-size: 1em; /* Increase font size */
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Add letter spacing */
+}
+    /* About Us section styles */
+    .about-us {
+  flex: 1;
+  padding-right: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.about-us h2 {
+  color: #4CAF50;
+}
+
+/* Contact Us section styles */
+.contact-us {
+  flex: 1;
+  padding-left: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact-us h2 {
+  color: #4CAF50;
+}
+
+/* Add hover effect for Contact Us section */
+.contact-us:hover {
+  background-color: #e0e0e0; /* Lighter background color on hover */
+  transition: background-color 0.3s;
+}
+    /* Add styles for the product cards */
+    .main-content1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    /* Product card styles */
+    .product-card {
+  flex: 0 0 calc(33.33% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add a smooth transition effect for hover */
+}
+
+/* Product card hover effect with animation */
+.product-card:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add a smooth transition effect for scale and box-shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust box-shadow on hover */
+}
+
+
+
+
+    .product-details {
+      padding: 16px;
+    }
+
+    .product-details h3 {
+      color: #4CAF50;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mahesh Dairy</h1>
+    <p>Your Trusted Source for Quality Dairy Products</p>
+  </header>
+
+  <section>
+    <h2>Our Products</h2>
+    <div class="main-content1">
+
+    
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Milk</h3>
+        <p>Fresh and nutritious milk produced with care.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Cheese</h3>
+        <p>A variety of delicious cheeses for every taste.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Yogurt</h3>
+        <p>Smooth and creamy yogurt for a delightful taste experience.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Butter</h3>
+        <p>Rich and flavorful butter, perfect for cooking and spreading.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Cream</h3>
+        <p>Indulgent cream to enhance the taste of your favorite dishes.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Paneer</h3>
+        <p>High-quality paneer for your culinary delights.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Ice Cream</h3>
+        <p>Delicious and refreshing ice cream in a variety of flavors.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Sour Cream</h3>
+        <p>Tangy sour cream to complement your favorite dishes.</p>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-details">
+        <h3>Milk Powder</h3>
+        <p>Convenient milk powder for various culinary uses.</p>
+      </div>
+    </div>
+  
+    
+
+</div>
+  </section>
+
+  <div class="main-content">
+    <!-- About Us section -->
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p>Welcome to Mahesh Dairy! We are dedicated to providing high-quality dairy products to our customers. With a focus on freshness and taste, we take pride in delivering the best dairy experience.</p>
+      <p>Explore our range of dairy products, including fresh milk, cheese, and more!</p>
+    </section>
+
+    <!-- Contact Us section -->
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <p>Reach out to us at: <a href="mailto:maheshdairy@raikarvarun.cloud">maheshdairy@raikarvarun.cloud</a></p>
+      <p>Call us at: <a href="tel:+917020904403">7020904403</a></p>
+      <p>Visit us at: Uruli Kanchan, Tal. Haveli, Dist. Pune, 412202</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Mahesh Dairy. All rights reserved.</p>
+    <!-- Add any additional footer content, such as social media links or business address -->
+  </footer>
+</body>
+</html>
